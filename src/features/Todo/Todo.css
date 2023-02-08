@@ -1,0 +1,13 @@
+.form-task>svg>path {
+    fill: #4F4F4F;
+    stroke: #4F4F4F;
+}
+
+.form-check-input:checked[type=checkbox] {
+    background-image: url('../../../public/assets/icons/checklist.svg') !important;
+}
+
+.form-check-input:checked {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}

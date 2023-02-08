@@ -1,0 +1,197 @@
+{
+  "inbox": [
+    {
+      "id": 1,
+      "title": "109220-Naturalization",
+      "participants": [
+        {
+          "name": "Mary Hilda"
+        },
+        {
+          "name": "You"
+        },
+        {
+          "name": "Obaidullah Amarkhil"
+        }
+      ],
+      "chats": [
+        {
+          "id": "1goll9rs0029f603636bd1f",
+          "participant": "Mary Hilda",
+          "message": "Just Fill me in for his updates yea?",
+          "time": "Mon Feb 06 2023 13:24:15"
+        },
+        {
+          "id": "1goll9rse09b33f565e838a",
+          "participant": "You",
+          "message": "No worries. It will be completed ASAP. I’ve asked him yesterday.",
+          "time": "Mon Feb 06 2023 13:24:16"
+        },
+        {
+          "id": "1goll9rui0231c989fdb40f",
+          "participant": "Mary Hilda",
+          "message": "Hello Obaidullah, I will be your case advisor for case #029290. I have assigned some homework for you to fill. Please keep up with the due dates. Should you have any questions, you can message me anytime. Thanks.",
+          "time": "Tue Feb 07 2023 13:24:15"
+        },
+        {
+          "id": "1goll9s2904e6d75deb9dae",
+          "participant": "You",
+          "message": "Please contact Mary for questions regarding the case bcs she will be managing your forms from now on! Thanks Mary.",
+          "time": "Tue Feb 07 2023 13:24:16"
+        },
+        {
+          "id": "1goll9s2i085caa52e3adb3",
+          "participant": "Mary Hilda",
+          "message": "Sure thing, Claren",
+          "time": "Tue Feb 07 2023 13:24:17"
+        },
+        {
+          "id": "1goll9s2i085caa52e3adb4",
+          "participant": "Obaidullah Amarkhil",
+          "message": "Morning. I’ll try to do them. Thanks",
+          "time": "Tue Feb 07 2023 13:24:18"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Jeannette Moraima Guaman Chamba (Hutto I-589) [ Hutto Follow Up - Brief Service ]",
+      "participants": [
+        {
+          "name": "Mary Hilda"
+        },
+        {
+          "name": "You"
+        },
+        {
+          "name": "Obaidullah Amarkhil"
+        }
+      ],
+      "chats": [
+        {
+          "id": "1goll6e3f0bd9678f64d3a9",
+          "participant": "Mary Hilda",
+          "message": "Just Fill me in for his updates yea?",
+          "time": "Mon Feb 06 2023 13:24:15"
+        },
+        {
+          "id": "1goll6e4r01c740524e17dd",
+          "participant": "You",
+          "message": "No worries. It will be completed ASAP. I’ve asked him yesterday.",
+          "time": "Mon Feb 06 2023 13:24:16"
+        },
+        {
+          "id": "1goll6efn0c5638e2a1aab",
+          "participant": "Mary Hilda",
+          "message": "Hello Obaidullah, I will be your case advisor for case #029290. I have assigned some homework for you to fill. Please keep up with the due dates. Should you have any questions, you can message me anytime. Thanks.",
+          "time": "Tue Feb 07 2023 13:24:15"
+        },
+        {
+          "id": "1goll9rrv022477a8ededf6",
+          "participant": "You",
+          "message": "Please contact Mary for questions regarding the case bcs she will be managing your forms from now on! Thanks Mary.",
+          "time": "Tue Feb 07 2023 13:24:16"
+        },
+        {
+          "id": "1goll9rsd014e0ca707ff01",
+          "participant": "Mary Hilda",
+          "message": "Sure thing, Claren",
+          "time": "Tue Feb 07 2023 13:24:17"
+        },
+        {
+          "id": "1goll9rth0a36d39e4f741c",
+          "participant": "Obaidullah Amarkhil",
+          "message": "Morning. I’ll try to do them. Thanks",
+          "time": "Tue Feb 07 2023 13:24:18"
+        }
+      ]
+    }
+  ],
+  "todo": [
+    {
+      "id": 1,
+      "title": "Cross-reference with Jeanne for Case #192813",
+      "date": "09/02/2023",
+      "desc": "Closing off this case since this application has been cancelled. No one really understand how this case could possibly be cancelled. The options and the documents within this document were totally a guaranteed for a success!",
+      "bookmark": [],
+      "done": 0
+    },
+    {
+      "title": "Check and Revise Homework from Andre Gonzales",
+      "date": "12/2/2023",
+      "desc": "Homeworks needed to be checked are as follows : Client Profile Questionnaire, Passport Requirements and Images, Personal Documents.",
+      "bookmark": [],
+      "done": 0,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Contact Andrew for Online Meeting and Conference",
+      "date": "07/02/2023",
+      "desc": "",
+      "bookmark": [],
+      "done": 1
+    },
+    {
+      "title": "Task",
+      "date": "10/2/2023",
+      "desc": "my task",
+      "bookmark": [
+        "Important ASAP",
+        "Virtual Meeting"
+      ],
+      "done": 0,
+      "id": 5
+    },
+    {
+      "title": "task",
+      "date": "11/2/2023",
+      "desc": "tas",
+      "bookmark": [],
+      "id": 6
+    },
+    {
+      "title": "",
+      "date": "",
+      "desc": "task",
+      "bookmark": [
+        "Court Related",
+        "Appointments"
+      ],
+      "done": 0,
+      "id": 7
+    },
+    {
+      "title": "task",
+      "date": "",
+      "desc": "",
+      "done": 0,
+      "bookmark": [],
+      "id": 8
+    },
+    {
+      "title": "Task",
+      "date": "",
+      "desc": "",
+      "done": 0,
+      "bookmark": [],
+      "id": 9
+    },
+    {
+      "title": "Task",
+      "date": "8/2/2023",
+      "desc": "",
+      "bookmark": [],
+      "done": 0,
+      "id": 10
+    },
+    {
+      "title": "Task",
+      "date": "9/2/2023",
+      "desc": "",
+      "done": 0,
+      "bookmark": [],
+      "id": 11
+    }
+  ]
+}
