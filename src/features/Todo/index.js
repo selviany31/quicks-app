@@ -1,82 +1,18 @@
 import { useEffect, useState } from "react";
-import { Button, Dropdown, Form, Modal } from "react-bootstrap";
-import SVG from "react-inlinesvg"
-import DatePicker from "react-multi-date-picker";
+import { Button, Form, Modal } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { createDataTodo, getDataTodo, updateDataTodo } from "../../store/action/todo";
+import { getDataTodo } from "../../store/action/todo";
 import TodoForm from "./Form";
 import "./Todo.css"
 import "../../index.css"
-import { formatDate } from "../../utils";
 import Todo from "./Todo";
 
 const TodoComponent = ({ show, close }) => {
     const dispatch = useDispatch()
 
-    const { todos, loading, success } = useSelector((state) => state.dataTodo)
+    const { todos, success } = useSelector((state) => state.dataTodo)
 
-    // const [selectedId, setSelectedId] = useState([])
     const [task, setTask] = useState(1)
-
-    // const handleButton = (value) => {
-    //     if(selectedId.includes(value)) {
-    //         return setSelectedId(selectedId.filter(el => el !== value))
-    //     } else {
-    //         return setSelectedId(selectedId.concat(value))
-    //     }
-    // }
-    // const [edit, setEdit] = useState([])
-    // const handleEditButton = (value) => {
-    //     if(edit.includes(value)) {
-    //         return setEdit(edit.filter(el => el !== value))
-    //     } else {
-    //         return setEdit(edit.concat(value))
-    //     }
-    // }
-
-    // const [newTask, setNewTask] = useState({
-    //     title: "",
-    //     date: "",
-    //     desc: "",
-    //     bookmark: [],
-    //     done: 0,
-    // })
-
-    // const onSubmit = (e, id, data) => {
-    //     e.preventDefault()
-    //     dispatch(updateDataTodo({
-    //         id,
-    //         data
-    //     }))
-    // }
-
-    // const renderBookmark = (value) => {
-    //     let bookmarks = value
-    //     return bookmarks 
-    // }
-
-    // const renderColor = (value) => {
-    //     switch (value) {
-    //         case 'Important ASAP':
-    //             return "#9DD0ED"
-    //         case 'Offline Meeting':
-    //             return "#FDCFA4"
-    //         case 'Virtual Meeting':
-    //             return "#F9E9C3"
-    //         case 'ASAP':
-    //             return "#AFEBDB"
-    //         case 'Client Related':
-    //             return "#CBF1C2"
-    //         case 'Self Task':
-    //             return "#CFCEF9"
-    //         case 'Appointments':
-    //             return "#F9E0FD"
-    //         case 'Court Related':
-    //             return "#9DD0ED"
-    //         default:
-    //             return "#9DD0ED"
-    //     }
-    // }
 
     useEffect(() => {
         if(success) {

@@ -1,12 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 import { Button, Form } from 'react-bootstrap';
 import SVG from 'react-inlinesvg'
 import InboxComponent from './features/Inbox';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import TodoComponent from './features/Todo';
-import { useDispatch, useSelector } from 'react-redux';
-import { getDataInbox } from './store/action/inbox';
 
 function App() {
   const [show, setShow] = useState(false)

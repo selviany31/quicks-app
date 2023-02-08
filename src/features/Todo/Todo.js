@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button, Dropdown, Form } from "react-bootstrap";
 import DatePicker from "react-multi-date-picker";
-import { useDispatch, useSelector } from "react-redux";
-import { getDataTodo, updateDataTodo } from "../../store/action/todo";
+import { useDispatch } from "react-redux";
+import { updateDataTodo } from "../../store/action/todo";
 import SVG from "react-inlinesvg"
 import { formatDate } from "../../utils";
 
@@ -234,15 +234,7 @@ const Todo = ({ todo }) => {
                     </div>
                 </div>
             </div>
-            <Form.Control type="submit" className="d-none" onClick={(e) => onSubmit(e, todo?.id 
-            // {
-            //     title: newTask.title ? newTask.title : todo?.title,
-            //     date: newTask.date ? newTask.date : todo?.date,
-            //     desc: newTask.desc ? newTask.desc : todo?.desc,
-            //     bookmark: [...new Set(newTask.bookmark ? newTask?.bookmark : todo?.bookmark)],
-            //     done: newTask.done ? newTask.done : todo?.done
-            // }
-            )}/>
+            <Form.Control type="submit" className="d-none" onClick={(e) => onSubmit(e, todo?.id )}/>
         </Form>
     );
 }

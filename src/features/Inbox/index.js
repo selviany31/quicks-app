@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import "../../index.css"
 import { getDataInbox } from "../../store/action/inbox";
 import Chat from "./Chat";
