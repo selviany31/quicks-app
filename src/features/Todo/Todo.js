@@ -80,13 +80,22 @@ const Todo = ({ todo }) => {
                 return ""
         }
     }
+    console.log(newTask);
 
     return (
         <Form className="d-flex" style={{ borderBottom: "1px solid #4F4F4F", margin: "22px 0" }}>
-            <Form.Check type="checkbox" className="bg-transparent" checked={todo?.done}/>
+            <Form.Check 
+                type="checkbox" 
+                className="bg-transparent" 
+                defaultChecked={newTask?.done} 
+                onChange={(e) => {
+                    setNewTask({...newTask, done: newTask.done === 0 ? 1 : 0})
+                    
+                }}
+            />
             <div className="w-100">
                 <div className="d-flex align-items-center justify-content-between mb-2 ms-4">
-                    {todo?.title ? <p className={`fw-bold mb-0 ${todo?.done ? "text-decoration-line-through" : ""}`}>{todo?.title}</p> : 
+                    {todo?.title ? <p className={`fw-bold mb-0 ${todo?.done === 1 ? "text-decoration-line-through" : ""}`}>{todo?.title}</p> : 
                         <Form.Control 
                         type="text" 
                         placeholder="Type Task Title" 
@@ -173,56 +182,77 @@ const Todo = ({ todo }) => {
                                 <Dropdown.Item 
                                     className="fw-bold my-2"
                                     style={{ background: "#E9F3FF", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask?.bookmark?.concat("Important ASAP")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask?.bookmark?.concat("Important ASAP")})
+                                        onSubmit(e, todo?.id )
+                                    }}
                                 >
                                     Important ASAP
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#FDCFA4", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Offline Meeting")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Offline Meeting")})
+                                        onSubmit(e, todo?.id )
+                                    }}
                                 >
                                     Offline Meeting
                                 </Dropdown.Item> 
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#F9E9C3", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Virtual Meeting")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Virtual Meeting")})
+                                        onSubmit(e, todo?.id)
+                                    }}
                                 >
                                     Virtual Meeting
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#AFEBDB", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("ASAP")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("ASAP")})
+                                        onSubmit(e, todo?.id )
+                                    }}
                                 >
                                     ASAP
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#CBF1C2", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Client Related")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Client Related")})
+                                        onSubmit(e, todo?.id )
+                                    }}
                                 >
                                     Client Related
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#CFCEF9", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Self Task")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Self Task")})
+                                    }}
                                 >
                                     Self Task
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#F9E0FD", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Appointments")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Appointments")})
+                                    }}
                                 >
                                     Appointments
                                 </Dropdown.Item>
                                 <Dropdown.Item 
                                     className="fw-bold  my-2"
                                     style={{ background: "#9DD0ED", borderRadius: "5px"}}
-                                    onClick={() => setNewTask({...newTask, bookmark: newTask.bookmark.concat("Court Related")})}
+                                    onClick={(e) => {
+                                        setNewTask({...newTask, bookmark: newTask.bookmark.concat("Court Related")})
+                                    }}
                                 >
                                     Court Related
                                 </Dropdown.Item>  
